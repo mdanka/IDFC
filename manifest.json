@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "IDFC",
+    "version": "1.1",
+    "description": "Are you tired of unfollowing the meaningless shit posted by your useless friends? It's the extension for you then!",
+    
+    "icons": {
+        "16": "icons/icon-16.png",
+        "48": "icons/icon-48.png",
+        "128": "icons/icon-128.png"
+    },
+
+    "author": "Geza Csenger",
+    
+    "permissions": ["tabs", "activeTab"],
+    "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  
+]}
